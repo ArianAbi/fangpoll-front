@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 60px;
+    background-color: #fefefe;
+    font-weight: 700;
+
+    box-shadow: 0 10px 17px #0000000e;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: auto;
+
+    background-color: #6a6a6a;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.footer-content>.paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding: 0 0 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 0 25px;
+}
+
+.social-media>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+
+    aspect-ratio: 1/1;
+    height: 36px;
+    border-radius: 50%;
+
+    color: white;
+    background-color: #828282;
+}
+
+.footer-year-tag {
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    height: 200px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    box-shadow: 0 10px 10px #0000000e;
+    background-color: #7F7F7F;
+}
+
+.img-placeholder {
+    height: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
