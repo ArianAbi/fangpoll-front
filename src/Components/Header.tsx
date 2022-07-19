@@ -1,10 +1,10 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header >
+        <header style={{ zIndex: 99 }}>
             <Link to={"/"}>
                 <div className="logo">LOGO</div>
             </Link>

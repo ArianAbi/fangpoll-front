@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Container, Typography, Box, Button, Divider } from '@mui/material/';
+import { Paper } from '@mui/material/';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage/LandingPage";

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Box, Typography, Divider, Button } from "@mui/material";
+import { Container, Box, Typography, Divider, Button, Stack } from "@mui/material";
 
 const LandingPage = () => {
     return (
-        <Container maxWidth="md" sx={{ display: "flex", flexDirection: 'column', margin: "auto" }}>
-            <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Typography variant="h2" fontWeight="400" color="#1e1e1e">
+        <Container maxWidth="md" sx={{ py: 12 }}>
+            <Stack alignItems={"center"} spacing={5}>
+                <Typography variant="h2">
                     Welcome To Fangpoll
                 </Typography>
                 <Typography variant="body1" paragraph={true} color="#6c6c6c" sx={{ width: "60%", textAlign: "center" }}>
@@ -17,22 +17,22 @@ const LandingPage = () => {
                         Login to Start
                     </Button>
                 </Link>
-            </Box>
-            <Divider />
-            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 80px" }}>
+            </Stack>
+            <Divider sx={{ my: 5 }} />
+            <Stack direction={"row"} justifyContent={"space-between"} sx={{ px: 10, mt: 5 }}>
                 <div className="features">
                     <div className="img-placeholder"></div>
-                    Easy to Use
+                    Login
                 </div>
                 <div className="features">
                     <div className="img-placeholder"></div>
-                    Open Source
+                    Create a Poll
                 </div>
                 <div className="features">
                     <div className="img-placeholder"></div>
-                    Available on Github
+                    Share it
                 </div>
-            </Box>
+            </Stack>
         </Container>
     )
 }
